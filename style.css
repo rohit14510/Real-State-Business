@@ -37,7 +37,7 @@
 }
 header {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   padding: 10px 0px;
   background-color: #0D1217;
@@ -51,6 +51,7 @@ header {
 .nav-links ul {
   display: flex;
   list-style: none;
+  padding: 0%;
 }
 
 .nav-links ul li {
@@ -60,7 +61,7 @@ header {
 .nav-links ul li a {
   text-decoration: none;
   color: white;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
   transition: 0.5s all;
 }
@@ -326,6 +327,76 @@ header {
 
 .img-container.active {
   display: block;
+}
+.residence_section {
+  position: relative;
+  width: 100%;
+  max-width: 500px; /* Adjust as needed */
+  margin: auto;
+}
+
+.residence_section-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px; /* Optional for rounded corners */
+}
+
+.residence_section-container img {
+  width: 100%;
+  display: block;
+  transition: transform 0.3s ease; /* Smooth scaling effect */
+}
+
+.residence_section-container:hover img {
+  transform: scale(1.1); /* Scale the image on hover */
+}
+
+.residence_section_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* Semi-transparent black overlay */
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align content to the left */
+  justify-content: space-between; /* Space out icon and content */
+  padding: 20px; /* Add padding for spacing */
+  transition: opacity 0.3s ease; /* Smooth fade-in effect */
+}
+
+
+
+.icon-circle {
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: #000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.icon-circle i {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900; /* Required for Font Awesome solid icons */
+}
+
+.residence_section_content {
+  color: white;
+  margin-bottom: 0; /* Ensure no extra bottom margin */
+  text-align: left; /* Align text to the left */
+}
+
+.residence_section_content h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 .card_top {

@@ -3,8 +3,8 @@
 }
 .quick_contact a {
   position: fixed;
-  width: 40px;
-  height: 40px;
+  width: 60px;
+  height: 60px;
   right: 18px;
   color: #fff;
   border-radius: 50px;
@@ -15,18 +15,21 @@
   transition: transform 0.5s ease;
 }
 .qwhtsapp {
-  bottom: 70px;
+  bottom: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #25d366;
 }
 .qcall {
-  bottom: 120px;
+  bottom: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #2196f3;
 }
 .quick_contact_icon {
-  margin-top: 10px;
+ 
 }
 .quick_contact a:hover {
   transform: scale(1.1);

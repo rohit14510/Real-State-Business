@@ -941,14 +941,22 @@ top: 0%;
   transform: translateY(0);
   transition: transform 0.3s ease-in-out;
 }
-
+.HeadingForm{
+  margin-bottom: 10px;
+}
 /* Mobile-specific behavior: hide the form initially */
 @media (max-width: 767px) {
   .fixed-bottom-form {
-    transform: translateY(83%);
+    transform: translateY(76%);
     z-index: 5 !important;
   }
-
+.HeadingForm{
+  background-color: #000;
+  padding: 10px;
+  color: white;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
   /* Show the form when it's active */
   .fixed-bottom-form.active {
     transform: translateY(0);
@@ -977,4 +985,15 @@ top: 0%;
 .btn-submit:hover {
   background-color: #fff;
   border: 1px solid #98C73B;
+}
+.Privacy_Policy{
+  color: #a3abb0;
+  text-decoration: none;
+  margin-top: 15px !important;
+}
+.Privacy_Policy:hover{
+  color: #a3abb0;
+}
+.TermsList li{
+  padding: 10px;
 }

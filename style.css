@@ -11,7 +11,7 @@
   text-align: center;
   font-size: 20px;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
-  z-index: 100;
+  z-index: 4;
   transition: transform 0.5s ease;
 }
 .qwhtsapp {
@@ -715,7 +715,7 @@ top: 0%;
 .dootedImg img{
   position: absolute;
   z-index: 1;
-  top:50%;
+  top:30%;
   left: 0;
 
 }
@@ -726,12 +726,7 @@ top: 0%;
   width:50%;
   background-size: cover;
 }
-@media screen and (max-width: 768px) {
-  .iconSlide img {
-    width: 100%; 
-    padding: 4px;
-  }
-}
+
 .daxinSite{
   background-image: url('assets/d-8.jpg');
   width: 100%;
@@ -753,6 +748,26 @@ top: 0%;
   background-repeat: no-repeat;
   background-position: center bottom;
  
+}
+.twinTower{
+  background-image: url('assets/d-9.jpg');
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+ 
+}
+@media (max-width: 768px) {
+  .twinTower{
+    background-image: url('assets/d-9.jpg');
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+   
+  }
 }
 .logoSection{
   background-image: url('assets/d-1.webp');
@@ -918,6 +933,33 @@ top: 0%;
   box-shadow: none !important; /* Remove focus outline */
   border-color: red !important; /* Focus border color */
 }
+
+
+
+/* Default behavior: form always visible on desktop */
+.fixed-bottom-form {
+  transform: translateY(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Mobile-specific behavior: hide the form initially */
+@media (max-width: 767px) {
+  .fixed-bottom-form {
+    transform: translateY(83%);
+    z-index: 5 !important;
+  }
+
+  /* Show the form when it's active */
+  .fixed-bottom-form.active {
+    transform: translateY(0);
+  }
+}
+
+
+
+
+
+
 
 .fixed-bottom-form {
   background-color: #f9f5e7;

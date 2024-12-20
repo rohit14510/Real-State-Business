@@ -103,7 +103,7 @@
                             Connected via Gurugram-Sohna Elevated Road Expressway</p>
                     </div>
                 
-                        <button class="Enqbtn ">Enquire Now</button>
+                       <a href="contact.html"> <button class="Enqbtn ">Enquire Now</button></a>
                 </div>
                 <div class="col-lg-4">
                     <img src="assets/d-3.webp" width="100%" alt="">
@@ -297,6 +297,49 @@
         </div>
     </div>
 </div>
+<!-- -------------------------------------------------------Connectivity------------------------------------------------ -->
+<div class="container-fluid connectivity p-4">
+<div class="row align-items-center text-center ">
+  <div class="col-lg-6">
+    <h3 class="text-uppercase fw-bold m-0">Location Connectivity</h3>
+    <p class="text-uppercase m-0">Subtract stress from your life</p>
+  </div>
+  <div class="col-lg-6 text-center">
+    <img src="assets/minus-min.webp" width="60%" alt="">
+  </div>
+</div>
+<div class="row DottedLine p-4">
+    <div class="slider-container">
+      <div id="splide_1" class="splide">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide iconSlide">
+              <img src="assets/Icon_Locations-01.svg" alt="">
+            </li>
+            <li class="splide__slide iconSlide">
+              <img src="assets/Icon_Locations-02.svg" alt="">
+            </li>
+            <li class="splide__slide iconSlide">
+              <img src="assets/Icon_Locations-03.svg" alt="">
+            </li>
+            <li class="splide__slide iconSlide">
+              <img src="assets/Icon_Locations-04.svg" alt="">
+            </li>
+            <li class="splide__slide iconSlide">
+              <img src="assets/Icon_Locations-05.svg" alt="">
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="dootedImg">
+      <img src="assets/doted_line-min.png" width="100%" alt="">
+    </div>
+  </div>
+</div>
+
+
+
 
 <!-- ----------------------------------------------------------------site-------------------------------------------------------------------- -->
   
@@ -309,7 +352,7 @@
         <img  src="assets/ds-3.webp" width="70%" alt="">
 
     </div>
-    <div class="text-center mt-4"><button class="brochure">Download Brochure</button></div>
+    <div class="text-center mt-4"><a href="assets/SG Daxin_Brochure.pdf" target="_blank"><button class="brochure">Download Brochure</button></a></div>
 </div>
 
 <div class="container-fluid addConvience p-4">
@@ -322,6 +365,38 @@
     </div>
 </div>
 
+
+  <!-- Form Section -->
+  <div class="fixed-bottom fixed-bottom-form">
+    <div class="container ">
+      <div class="row">
+        <h4 class="text-center">Enquire Now</h4>
+      </div>
+      <div class="row g-3">
+        <div class="col-md-3">
+          <div class="input-group">
+            <span class="input-group-text"><i class="fa-solid fa-user"></i></span>
+            <input type="text" class="form-control" placeholder="Name">
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="input-group">
+            <span class="input-group-text"><i class="fa-solid fa-envelope"></i></span>
+            <input type="email" class="form-control" placeholder="Email">
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="input-group">
+            <span class="input-group-text"><i class="fa-solid fa-phone"></i></span>
+            <input type="text" class="form-control" placeholder="Mobile No.">
+          </div>
+        </div>
+        <div class="col-md-3">
+          <button class="btn btn-submit w-100">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
 <!-- -------------------------------------------------------------Start Footer Section------------------------------------- -->
 <div class="container-fluid footer p-4">
@@ -498,6 +573,16 @@
                 }).mount();
             });
         </script>
+                    <script>
+                      document.addEventListener("DOMContentLoaded", function () {
+                        new Splide("#splide_1", {
+                          type: "loop",
+                          arrows: false, 
+                          perPage: 5,
+                          autoplay: true,
+                        }).mount();
+                      });
+                    </script>
 </body>
 
 </html>

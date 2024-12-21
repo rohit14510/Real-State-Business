@@ -424,19 +424,21 @@
       <img src="assets/Location-Map-2.jpg" width="100%" alt="" />
     </div>
 
-    <!-- Form Section -->
-    <div class="fixed-bottom fixed-bottom-form" id="enquire-now">
+     <!-- Form Section -->
+     <div class="fixed-bottom fixed-bottom-form" id="enquire-now">
       <div class="container">
         <div class="row HeadingForm rounded">
           <h4 class="text-center fw-bold p-0 m-0" style="color: #98c73b;">Enquire Now</h4>
         </div>
+        <form action="https://api.web3forms.com/submit" method="POST">
         <div class="row g-3">
+          <input type="hidden" name="access_key" value="ee6edcb1-45e1-4199-9127-bc8f577b742a">
           <div class="col-md-3">
             <div class="input-group">
               <span class="input-group-text"
                 ><i class="fa-solid fa-user"></i
               ></span>
-              <input type="text" class="form-control" placeholder="Name" />
+              <input type="text" class="form-control" name="Name" placeholder="Name" />
             </div>
           </div>
           <div class="col-md-3">
@@ -444,7 +446,7 @@
               <span class="input-group-text"
                 ><i class="fa-solid fa-envelope"></i
               ></span>
-              <input type="email" class="form-control" placeholder="Email" />
+              <input type="email" class="form-control" name="Name" placeholder="Email" />
             </div>
           </div>
           <div class="col-md-3">
@@ -454,6 +456,7 @@
               ></span>
               <input
                 type="text"
+                name="Name"
                 class="form-control"
                 placeholder="Mobile No."
               />
@@ -463,6 +466,7 @@
             <button class="btn btn-submit w-100">Submit</button>
           </div>
         </div>
+        </form>
       </div>
     </div>
 

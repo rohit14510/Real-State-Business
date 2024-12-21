@@ -80,12 +80,14 @@
             <!-- Form Content -->
             <div class="row">
               <div class="mt-lg-0 mt-3 p-4 ">
-                <form>
+                <form action="https://api.web3forms.com/submit" method="POST">
                   <div class="row">
+                    <input type="hidden" name="access_key" value="ee6edcb1-45e1-4199-9127-bc8f577b742a">
                     <div class="form-group col-md-6 mb-3">
                       <label class="text-dark" for="">Full Name:</label>
                       <input
                         type="text"
+                        name="Full_name"
                         class="form-control"
                         placeholder="Your Name"
                       />
@@ -94,6 +96,7 @@
                       <label class="text-dark" for="">Email Address:</label>
                       <input
                         type="email"
+                        name="email"
                         class="form-control"
                         placeholder="Enter Email"
                       />
@@ -104,6 +107,7 @@
                       <label class="text-dark" for="">Subject:</label>
                       <input
                         type="text"
+                        name="subject"
                         class="form-control"
                         placeholder="Subject"
                       />
@@ -112,6 +116,7 @@
                       <label class="text-dark" for="">Phone Numbers:</label>
                       <input
                         type="text"
+                        name="Phone-Number"
                         class="form-control"
                         placeholder="Phone"
                       />
@@ -121,6 +126,7 @@
                     <label class="text-dark" for="">Your Message:</label>
                     <textarea
                       class="form-control"
+                      name="Your-Message"
                       rows="5"
                       placeholder="Message"
                     ></textarea>

@@ -133,7 +133,7 @@
         </p>
       </div>
       <div class="row">
-        <div id="splide" class="splide">
+        <div id="testimonials_splide" class="splide">
           <div class="splide__track">
             <ul class="splide__list">
               <li class="splide__slide p-4">
@@ -443,11 +443,11 @@
             <i class="me-lg-2 fa-solid fa-location-dot"></i> Plot No. 90 Sector 44
             Gurgaon 122003
           </p>
-          <p class="mb-1 text-muted"><i class="me-lg-2 fa-solid fa-phone"></i> 9871610645</p>
-          <p class="mb-1 text-muted">
-            <i class="me-lg-2 fa-solid fa-envelope"></i>
-            sales@goodluckrealty.in
-          </p>
+         <p class="m-0 p-0"> <a href="tel:+919871610645" class="mb-1 text-muted" style="text-decoration: none;"><i class="me-lg-2 fa-solid fa-phone"></i> 9871610645</a></p>
+        <p class="m-0 p-0">  <a href="mailto:  sales@goodluckrealty.in" class="mb-1 text-muted" style="text-decoration: none;">
+          <i class="me-lg-2 fa-solid fa-envelope"></i>
+          sales@goodluckrealty.in
+        </a></p>
         </div>
       </div>
       <hr />
@@ -464,19 +464,6 @@
     ></script>
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide/dist/js/splide.min.js"></script>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        new Splide("#splide", {
-          type: "loop",
-          perPage: 3, // Default for desktop
-          autoplay: true,
-          breakpoints: {
-            768: {
-              perPage: 1, // For screens 768px or smaller
-            },
-          },
-        }).mount();
-      });
-    </script>
+  
   </body>
 </html>

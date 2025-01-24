@@ -40,3 +40,32 @@ buttons.forEach(button => {
     button.classList.add('active');
   });
 });
+
+// testimonials slide
+
+document.addEventListener("DOMContentLoaded", function () {
+  new Splide("#testimonials_splide", {
+    type: "loop",
+    perPage: 3, // Default for desktop
+    autoplay: true,
+    breakpoints: {
+      768: {
+        perPage: 1, // For screens 768px or smaller
+      },
+    },
+  }).mount();
+});
+// splide_Connectivity slide
+document.addEventListener("DOMContentLoaded", function () {
+  new Splide("#splide_Connectivity", {
+    type: "loop",
+    arrows: false,
+    perPage: 5,
+    autoplay: true,
+    breakpoints: {
+      768: {
+        perPage: 1, // For screens 768px or smaller
+      },
+    },
+  }).mount();
+});

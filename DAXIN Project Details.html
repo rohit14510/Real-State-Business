@@ -345,7 +345,7 @@
       </div>
       <div class="row DottedLine p-4">
         <div class="slider-container">
-          <div id="splide_1" class="splide">
+          <div id="splide_Connectivity" class="splide">
             <div class="splide__track">
               <ul class="splide__list">
                 <li class="splide__slide iconSlide">
@@ -594,11 +594,11 @@
             <i class="me-lg-2 fa-solid fa-location-dot"></i> Plot No. 90 Sector 44
             Gurgaon 122003
           </p>
-          <p class="mb-1 text-muted"><i class="me-lg-2 fa-solid fa-phone"></i> 9871610645</p>
-          <p class="mb-1 text-muted">
-            <i class="me-lg-2 fa-solid fa-envelope"></i>
-            sales@goodluckrealty.in
-          </p>
+          <p class="m-0 p-0"> <a href="tel:+919871610645" class="mb-1 text-muted" style="text-decoration: none;"><i class="me-lg-2 fa-solid fa-phone"></i> 9871610645</a></p>
+        <p class="m-0 p-0">  <a href="mailto:  sales@goodluckrealty.in" class="mb-1 text-muted" style="text-decoration: none;">
+          <i class="me-lg-2 fa-solid fa-envelope"></i>
+          sales@goodluckrealty.in
+        </a></p>
         </div>
       </div>
       <hr />
@@ -628,31 +628,6 @@
           perPage: 1,
           autoplay: true,
         }).mount();
-      });
-    </script>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        new Splide("#splide_1", {
-          type: "loop",
-          arrows: false,
-          perPage: 5,
-          autoplay: true,
-          breakpoints: {
-            768: {
-              perPage: 1, // For screens 768px or smaller
-            },
-          },
-        }).mount();
-      });
-    </script>
-    <script>
-      $(document).ready(function () {
-        if ($(window).width() <= 767) {
-          // Only apply the toggle on mobile
-          $("#enquire-now").on("click", function () {
-            $(this).toggleClass("active");
-          });
-        }
       });
     </script>
   </body>
